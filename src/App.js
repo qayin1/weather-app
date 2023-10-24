@@ -66,10 +66,12 @@ function App() {
   }, []);
 
   const temperatureColor = temperature => {
-    if (temperature < 11) {
+    if (temperature <= 11) {
       return '#0000FF';
     } else if (temperature > 24) {
       return '#D2691E';
+    } else if (temperature > 14) {
+      return '#FFFF00';
     } else {
       return '#FFFFFF';
     }
